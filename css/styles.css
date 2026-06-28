@@ -246,6 +246,14 @@ header .parent-menu .list .menu-nav{
 /* responsiv */
 
 @media screen and (max-width: 600px){
+    html{
+        font-size: 70%;
+    }
+    .about{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
     .parent-menu{
         /* display: none; */
         position: fixed;
@@ -253,7 +261,7 @@ header .parent-menu .list .menu-nav{
         left: 0;
         right: 0;
         z-index: 10;
-        height: 4.2rem;
+        height: 4rem;
         width: 80%;
         margin: 0 auto;
         padding: .5rem 1rem;
@@ -271,9 +279,11 @@ header .parent-menu .list .menu-nav{
         justify-content: space-around;
     }
     .menu-nav a{
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
-    
+    .main .main-right img{
+        width: 19rem;
+    }
     
 }
 @media screen and (max-width: 1200px){
@@ -311,26 +321,26 @@ header .parent-menu .list .menu-nav{
 }
 @media screen and (max-width: 575px){
     header{
-        padding: 1rem 1.5rem;
+        padding: 1rem .5rem;
 
     }
-    .container{ max-width: 550px;}
+    /* .container{ width: 550px;} */
     .about{
         align-items: center;
         justify-content: center;
         margin: 6.7 auto 0;
     }
     .about .about-left{
-        grid-template-columns: repeat(2,12rem);
+        grid-template-columns: repeat(2,9rem);
     }
     .about .about-right p{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .about .text-right{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .about .about-me-left{
-        font-size: 1.3rem;
+        font-size: 1rem;
         align-items: center;
     }
 }
