@@ -1,11 +1,9 @@
-const text = "Saeed Soltani"
-const textElement = document.getElementById("text-el");
-let i = 0;
-function type() {
-    if(i < text.length){
-        textElement.textContent += text[i]
-        i++;
-        setTimeout(type, 200)
-    }
-}
-window.addEventListener("load", type())
+const navBtn = document.querySelectorAll(".nav-btn");
+navBtn.forEach((item)=>{
+   item.addEventListener("click", ()=>{
+    navBtn.forEach((item)=>item.classList.remove("active"))
+    // item.classList.remove("active")
+    item.classList.add("active");
+
+   }) 
+})
